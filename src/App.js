@@ -1,16 +1,13 @@
-import ProfilePhoto from './components/ProfilePhoto'
-import FullName from './components/FullName'
 import './App.css';
-import Address from './components/Address';
+import Profile from './Profile/Profile';
+import img  from "./img.jpg";
+
 
 function App() {
   return (
     <div className="App">
       <h1>My Profile</h1>
-      <ProfilePhoto/>
-      <FullName/>
-      <Address/>
-      
+      <Profile fullName='Zahmouli nizar' bio ='test' profession='developper' children={img} />
       
     </div>
   );
